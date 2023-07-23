@@ -10,7 +10,20 @@ In addition, an example package.json script (test:ci) has been added which would
 
 ## API Tests
 
-TODO: add info here in following commit where these tests are added
+API tests are focussed on validating realistic usecases and any setup steps would be employed to set the initial test state. Configuration as required would ensure that the test database reverts to a defined state after each test runs.
+
+Examples used here show the basic usage with Cypress.
+
+Considering the automation of syncing with the openapi spec was an interesting challenge, I reviewed resources such as:
+
+https://www.npmjs.com/package/@openapitools/openapi-generator-cli
+https://www.npmjs.com/package/jest-openapi
+
+Both interesting but not getting the job done - the generator suggests it can include tests but I wasn't quickly able to resolve the right actions to do so.
+
+As the JSON/YAML for the petstore example is availble it's an easy step to think that synchronisation should be pretty easy and clearly offers great benefits.
+
+Scripts added to package.json show the example setup for the tests to run.
 
 ## Appendices
 
